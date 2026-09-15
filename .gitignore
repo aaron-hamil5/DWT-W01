@@ -1,0 +1,5 @@
+# Project exclude paths
+/node_modules/
+/node_modules/babel-eslint/LICENSE
+/node_modules/babel-eslint/README.md
+/node_modules/serve/
