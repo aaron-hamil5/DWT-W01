@@ -1,1 +1,32 @@
 console.log("Welcome to the first lab of Dynamic Web Technologies");
+
+
+// Develop a small-scale Student Information System using JavaScript, integrating various concepts covered in the
+// lab sessions. This application will manage student data, including names, courses, and grades, and provide
+// functionality to add, view, and compute average grades.
+
+// TIP: Have a look in the following links to learn about using classes in JavaScript and the array find() method
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes
+// https://www.w3schools.com/jsref/jsref_find.asp
+
+// Requirements:
+// 1. Student Data Structure: Use objects to store student information (name, course, grade),
+// 2. Functions for Operations: Implement functions to add new students, retrieve a student's details, and calculate
+// average grades.
+// 3. Control Structures: Utilize control structures for logical operations, like determining grade classifications
+// (e.g., Pass, Fail).
+//4. Array Manipulations: Use arrays to store multiple student objects and apply array methods for data handling.
+
+// TIP: You can start, for example, creating a new Student Class as the following.
+
+class Student {
+    constructor(name, course, grades) {
+        this.name = name;
+        this.course = course;
+        this.grades = grades;
+    }
+    averageGrade() {
+
+    }
+}
