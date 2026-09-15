@@ -46,4 +46,6 @@ const students = [
     new Student("Alice", "Chemistry", [88, 92, 78]),
 ]
 
-students.find(student => student.name === "Jane").averageGrade();
+for (let student of students) {
+    student.averageGrade();
+}
