@@ -5,7 +5,7 @@ console.log("Welcome to the first lab of Dynamic Web Technologies");
 // lab sessions. This application will manage student data, including names, courses, and grades, and provide
 // functionality to add, view, and compute average grades.
 
-// TIP: Have a look in the following links to learn about using classes in JavaScript and the array find() method
+// TIP: Have a look at the following links to learn about using classes in JavaScript and the array find() method
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes
 // https://www.w3schools.com/jsref/jsref_find.asp
@@ -27,6 +27,23 @@ class Student {
         this.grades = grades;
     }
     averageGrade() {
+        let gradeTotal = this.grades.reduce((acc, curr) => parseInt(acc) + parseInt(curr));
 
+        let averageTotal = gradeTotal / this.grades.length;
+
+        if (averageTotal >= 40) {
+            console.log(this.name + " has a " + averageTotal + " average grade and has passed " + this.course)
+        } else {
+            console.log(this.name + " has a " + averageTotal + " average grade and has failed " + this.course)
+        }
     }
 }
+
+const students = [
+    new Student("John", "CS", [85, 90, 75]),
+    new Student("Jane", "Math", [95, 80, 65]),
+    new Student("Bob", "Physics", [70, 60, 85]),
+    new Student("Alice", "Chemistry", [88, 92, 78]),
+]
+
+students.find(student => student.name === "Jane").averageGrade();
